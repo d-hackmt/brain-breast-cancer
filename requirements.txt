@@ -1,5 +1,5 @@
 tensorflow>=2.16.1
-opencv-python
+opencv-python-headless
 numpy<2.0.0
 pillow
 huggingface_hub

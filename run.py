@@ -24,10 +24,10 @@ if __name__ == "__main__":
     # regardless of the working directory the script is launched from.
     os.environ.setdefault("PYTHONPATH", os.path.dirname(os.path.abspath(__file__)))
 
-    print("Starting OncoScan AI Server on http://127.0.0.1:8000")
+    print("Starting OncoScan AI Server on http://0.0.0.0:8000")
     uvicorn.run(
         "backend.main:app",
-        host="127.0.0.1",
+        host="0.0.0.0",
         port=8000,
         reload=False,   # Set to True for local development only —
                         # reload=True spawns a file-watcher thread that
