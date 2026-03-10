@@ -37,8 +37,10 @@ jobs:
                 docker push $IMAGE:$GITHUB_SHA
 
             - name: GKE Configuration
-              run: |
-                gcloud container clusters get-credentials $GKE_CLUSTER --region $GKE_REGION --project $PROJECT_ID
+              uses: google-github-actions/get-gke-credentials@v2
+              with:
+                cluster_name: ${{ env.GKE_CLUSTER }}
+                location: ${{ env.GKE_REGION }}
 
             - name: Deploying to Kubernetes
               run: |
