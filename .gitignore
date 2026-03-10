@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+bbenv/
+venv/
+.venv/
+include/
+bin/
+lib/
+Scripts/
+
+# Logs
+logs/
+*.log
+
+# Models (optional - sometimes excluded if large)
+# models/*.keras
+# models/*.h5
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Local AI artifacts
+.gemini/
+
+
+brenv
