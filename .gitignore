@@ -53,6 +53,6 @@ frontend/.env
 
 brenv
 
-gcpp-key.json
+gcp-key.json
 
 tt.txt
